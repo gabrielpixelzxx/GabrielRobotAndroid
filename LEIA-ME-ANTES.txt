@@ -1,0 +1,25 @@
+GABRIEL ROBOT — PROJETO ANDROID PARA GERAR APK
+
+O QUE ESTÁ PRONTO
+- Projeto Android nativo com WebView em tela cheia.
+- Painel original incluído dentro do aplicativo.
+- JavaScript, armazenamento local e acesso à internet habilitados.
+- Ponte Android para notificações, vibração e manter a tela ligada enquanto o monitor estiver ativo.
+
+IMPORTANTE: ESTE ZIP É O PROJETO-FONTE, NÃO É O APK INSTALÁVEL.
+O ambiente onde o projeto foi preparado não possui Android SDK/Gradle, então não foi possível compilar e assinar um APK aqui.
+
+COMO GERAR O APK (precisa de um computador com Android Studio)
+1. Instale o Android Studio.
+2. Extraia este ZIP.
+3. No Android Studio, escolha Open e selecione a pasta GabrielRobotAndroid.
+4. Aguarde o Gradle sincronizar e baixar as dependências.
+5. Vá em Build > Build Bundle(s) / APK(s) > Build APK(s).
+6. O APK de teste será criado em app/build/outputs/apk/debug/app-debug.apk.
+7. Envie esse APK para o Android, abra-o e autorize a instalação de apps dessa fonte se o sistema pedir.
+
+LIMITAÇÕES QUE AINDA EXISTEM NO CÓDIGO ORIGINAL
+- Criptomoedas/Binance e o monitor Pump.fun usam internet e podem funcionar no WebView.
+- Ações, ouro, prata e cobre e a busca de ações chamam /api/chart e /api/search. Esses endpoints dependem do servidor Python abrir_radar.py, que não está incluído neste app; esses recursos não funcionarão até integrar/hospedar esse backend.
+- Android pode suspender o aplicativo quando ele fica em segundo plano ou é fechado. Notificações não garantem monitoramento contínuo com o app fechado.
+- Os sinais são estimativas técnicas, não garantem acerto nem lucro.
